@@ -4,104 +4,165 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ana B Hayma – Blog Geológico</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #f5f9ff, #e9f3ff);
-    color: #333;
-  }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9fbfd;
+      color: #333;
+      line-height: 1.6;
+    }
 
-  header {
-    background-color: #003366;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-  }
+    header {
+      background: linear-gradient(135deg, #003366, #005599);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-  h1 {
-    font-size: 2.5em;
-    margin: 0;
-  }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
 
-  p.subtitle {
-    font-size: 1.2em;
-    color: #cce0ff;
-    margin-top: 10px;
-  }
+    .subtitle {
+      font-size: 1.3em;
+      margin-top: 10px;
+      color: #cde6ff;
+    }
 
-  .section {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-  }
+    .section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 25px;
+    }
 
-  h2 {
-    color: #003366;
-    border-bottom: 2px solid #cce0ff;
-    padding-bottom: 5px;
-  }
+    h2 {
+      color: #003366;
+      border-bottom: 2px solid #cce0ff;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+    }
 
-  ul li {
-    margin-bottom: 10px;
-  }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
 
-  footer {
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
-    color: #666;
-    margin-top: 60px;
-  }
+    ul li::before {
+      content: "✔️ ";
+      margin-right: 6px;
+    }
 
-  a {
-    color: #0066cc;
-    text-decoration: none;
-  }
+    ul li {
+      background: #eef6ff;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
 
-  a:hover {
-    text-decoration: underline;
-  }
-</style>
+    ul li:hover {
+      background: #d9ecff;
+    }
 
+    footer {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 60px;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-box {
+      background: #e9f3ff;
+      padding: 20px;
+      border-left: 5px solid #005599;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .contact-box strong {
+      font-size: 1.1em;
+    }
+
+    .button-contact {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #005599;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .button-contact:hover {
+      background-color: #003f73;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+      .section {
+        padding: 0 15px;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <h1>Ana B Hayma</h1>
-    <p>Blog de geología satelital, análisis LANDSAT y ciencia ambiental</p>
+    <p class="subtitle">Blog de geología satelital, análisis LANDSAT y ciencia ambiental</p>
   </header>
 
   <div class="section">
     <h2>Sobre mí</h2>
-<p>
-  Soy Ana Basilia Hayma, una persona profundamente apasionada por la geología y el estudio de nuestro planeta. Desde muy joven me ha fascinado entender cómo se formó la Tierra, cómo cambian sus paisajes con el tiempo y cómo podemos interpretarlos mediante tecnologías modernas.  
-</p>
-<p>
-  En este espacio comparto mi entusiasmo por la ciencia, combinando la geología tradicional con herramientas tecnológicas como imágenes satelitales LANDSAT, sistemas de información geográfica (SIG), y análisis ambiental.  
-</p>
-<p>
-  Me motiva aprender, explorar, y compartir conocimientos que puedan aportar a la comprensión del entorno natural y a la toma de decisiones sostenibles. Este blog es una forma de conectar mi vocación con otros curiosos, investigadores, estudiantes y profesionales del área.
-</p>
-
+    <p>
+      Soy Ana Basilia Hayma, una persona profundamente apasionada por la geología y el estudio de nuestro planeta. Desde muy joven me ha fascinado entender cómo se formó la Tierra, cómo cambian sus paisajes con el tiempo y cómo podemos interpretarlos mediante tecnologías modernas.
+    </p>
+    <p>
+      En este espacio comparto mi entusiasmo por la ciencia, combinando la geología tradicional con herramientas como imágenes satelitales LANDSAT, sistemas de información geográfica (SIG) y análisis ambiental.
+    </p>
+    <p>
+      Me motiva aprender, explorar y compartir conocimientos que puedan aportar a la comprensión del entorno natural y a la toma de decisiones sostenibles. Este blog es una forma de conectar mi vocación con otros curiosos, investigadores, estudiantes y profesionales del área.
+    </p>
 
     <h2>Proyectos destacados</h2>
     <ul>
-      <li>🔍 Análisis de movimientos de masa con LANDSAT</li>
-      <li>💧 Estudio de recursos hídricos en zonas áridas</li>
-      <li>⚠️ Monitoreo de riesgos naturales en regiones mineras</li>
+      <li>Análisis de movimientos de masa con LANDSAT</li>
+      <li>Estudio de recursos hídricos en zonas áridas</li>
+      <li>Monitoreo de riesgos naturales en regiones mineras</li>
     </ul>
 
     <h2>Contacto</h2>
-    <p>
-      📧 Puedes escribirme a: <strong>analcima123@gmail.com</strong><br />
-      🌐 LinkedIn: <a href="https://www.linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/tuusuario</a>
-    </p>
+    <div class="contact-box">
+      📧 Escríbeme a: <strong>analcima123@gmail.com</strong><br>
+      <a class="button-contact" href="mailto:analcima123@gmail.com">Enviar correo</a>
+    </div>
   </div>
 
   <footer>
     &copy; 2025 Ana B Hayma. Todos los derechos reservados.
   </footer>
+
 </body>
 </html>
